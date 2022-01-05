@@ -1,0 +1,25 @@
+.partners {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 130px;
+    overflow-x: auto;
+  }
+  &__item {
+    transition: all, 0.2s;
+    cursor: pointer;
+
+    path {
+      transition: all, 0.2s;
+    }
+    &:hover path {
+      fill: #f78cb6;
+      stroke: #f78cb6;
+    }
+  }
+}

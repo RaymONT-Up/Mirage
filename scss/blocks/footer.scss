@@ -1,0 +1,126 @@
+.footer {
+  background-image: url(../../images/footer__bg.svg);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  &__info {
+    display: grid;
+    grid-template-columns: 290px 1fr 1fr 1fr;
+    justify-content: space-between;
+    grid-gap: 50px;
+    padding: 70px 0;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 40px;
+  }
+  &__paragraph {
+    margin-bottom: 40px;
+  }
+
+  &__social-title {
+    margin-bottom: 15px;
+
+    font-family: "Proxima Nova", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+
+    color: #919299;
+  }
+  &__social-item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    &:hover .footer__social-icon {
+      fill: #f78cb6;
+      stroke: #f78cb6;
+    }
+    &:hover .footer__social-icon path {
+      fill: #f78cb6;
+      stroke: #f78cb6;
+    }
+  }
+  &__social-icon {
+    transition: all, 0.4s;
+  }
+
+  &__item-title {
+    margin-bottom: 35px;
+
+    font-family: "Circular Std", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+
+    color: #56597a;
+  }
+  &__item {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  &__link {
+    display: block;
+
+    font-family: "Proxima Nova", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+
+    color: #919299;
+    opacity: 0.9;
+    transition: all, 0.4s;
+    &:hover {
+      color: #6f6f71;
+      opacity: 1;
+    }
+  }
+  &__copyright {
+    padding: 12px 0;
+    background: #f78cb6;
+    text-align: center;
+  }
+  &__copyright-text {
+    position: relative;
+    display: inline-block;
+
+    font-family: "Circular Std", Arial, sans-serif;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+
+    text-align: center;
+
+    color: #ffffff;
+    &::after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      background-image: url(../images/icons/copyright.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+ 
+}

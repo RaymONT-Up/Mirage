@@ -1,0 +1,68 @@
+.reviews {
+  &__inner {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 160px;
+  }
+  &__img-wrapper {
+    margin-right: 20px;
+    max-width: 460px;
+
+    width: 100%;
+    height: 100%;
+  }
+  &__img {
+    height: 100%;
+    width: 100%;
+  }
+  &__info {
+    max-width: 560px;
+  }
+  &__subtitle {
+    margin-bottom: 15px;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__review-paragraph {
+    margin-bottom: 15px;
+  }
+  &__review-name {
+    margin-bottom: 10px;
+
+    font-family: "Proxima Nova", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+
+    color: #56597a;
+  }
+  &__review-city {
+    font-family: "Proxima Nova", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #ababab;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 0;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: auto;
+    bottom: 0.5%;
+  }
+  .swiper-button-prev {
+    left: auto;
+    right: 100px;
+  }
+  .swiper-button-disabled {
+    opacity: 0.7;
+    svg path {
+      fill: #56597a;
+    }
+  }
+}
